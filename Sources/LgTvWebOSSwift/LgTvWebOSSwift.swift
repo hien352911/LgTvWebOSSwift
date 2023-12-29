@@ -187,12 +187,11 @@ public class LgTvWebOSSwift: WebSocketDelegate  {
     
     //MARK:- Socket Events Handlers
     
-    public func didReceive (event: WebSocketEvent, client: WebSocket) {
-        
-        self.socketEventsHandler(event: event, client: client)
+    public func didReceive(event: Starscream.WebSocketEvent, client: Starscream.WebSocketClient) {
+        self.socketEventsHandler(event: event, client: nil)
     }
     
-    private func socketEventsHandler (event: WebSocketEvent, client: WebSocket) {
+    private func socketEventsHandler (event: WebSocketEvent, client: WebSocket?) {
         
         self.serialQueue.async {
             
