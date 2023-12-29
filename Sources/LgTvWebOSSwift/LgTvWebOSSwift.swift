@@ -31,7 +31,7 @@ public class LgTvWebOSSwift: WebSocketDelegate  {
    
     //MARK: - Connection
     
-    func connect() {
+    public func connect() {
         
         self.serialQueue.async {
                         
