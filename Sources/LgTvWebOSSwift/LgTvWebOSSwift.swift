@@ -142,7 +142,7 @@ public class LgTvWebOSSwift: WebSocketDelegate  {
     
     //MARK: - Send Commands
     
-    func sendKey(_ key: TvKey) {
+    public func sendKey(_ key: TvKey) {
         
         self.serialQueue.async {
         

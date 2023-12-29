@@ -24,7 +24,7 @@ extension StringProtocol {
 
 //MARK: - TvKey enum
 
-enum TvKey {
+public enum TvKey {
     case up
     case down
     case left
